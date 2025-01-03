@@ -1,69 +1,70 @@
-<<<<<<< HEAD
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-    gap: 20px; /* Space between banner and index */
-}
-
-/* Banner Section */
+/* Banner Styling */
 .banner {
-    width: 80%; /* Same width as the index */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Make the banner and recipe lists the same width */
+    margin: 0 auto; /* Center the banner */
+    padding: 10px 0;
 }
 
+/* Banner Image */
 .banner img {
-    width: 100%; /* Makes the image fill the banner container */
+    max-width: 100%;
     height: auto;
-    display: block; /* Removes extra spacing below the image */
+    border-radius: 5px; /* Optional: Add rounded corners to match sections */
 }
 
-/* Index Section */
+/* Recipes Container */
+.recipes-container {
+    display: flex;
+    justify-content: space-between; /* Space between the lists */
+    gap: 20px;
+    width: 80%; /* Same width as the banner */
+    margin: 20px auto; /* Center the container */
+}
+
+/* Individual Recipe Sections */
+.recipes {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.recipes h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Recipe List */
 .index {
     list-style: none;
     padding: 0;
-    margin: 0;
-    width: 80%; /* Matches the banner width */
-    text-align: left;
 }
 
 .index li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
-/* Responsive Design with Media Queries */
+.index a {
+    text-decoration: none;
+    color: #007bff;
+}
 
-/* For screens smaller than 768px (tablet and mobile) */
+.index a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .banner {
-        width: 90%; /* Increase width to almost full screen */
+    .recipes-container {
+        flex-direction: column;
     }
 
-    .index {
-        width: 90%; /* Match the banner width for consistency */
-        text-align: center; /* Center the index text */
-    }
-
-    .index li {
-        font-size: 1rem; /* Adjust text size for smaller screens */
-    }
-}
-
-/* For screens smaller than 480px (small phones) */
-@media (max-width: 480px) {
-    .banner {
-        width: 100%; /* Banner spans the full width */
-    }
-
-    .index {
-        width: 100%; /* Index spans the full width */
-        padding: 0 10px; /* Add some padding for readability */
-    }
-
-    .index li {
-        font-size: 0.9rem; /* Slightly smaller text size */
+    .recipes {
+        margin-bottom: 20px;
     }
 }
