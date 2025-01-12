@@ -1,0 +1,43 @@
+/* Recipe Page Specific Styles */
+.page-title-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-title-section .french-title {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.page-title-section .english-title {
+    text-align: right;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.recipe-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.recipe-image-wrapper {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-details-wrapper {
+    flex: 1 1 65%;
+}

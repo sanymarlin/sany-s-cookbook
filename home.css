@@ -1,0 +1,89 @@
+/* Home Page Specific Styles */
+.page-title-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-title-section .french-title {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.page-title-section .english-title {
+    text-align: right;
+    font-size: 1.8rem;
+    color: #4caf50;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+}
+
+.recipe-list {
+    flex: 1 1 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-list h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.recipe-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recipe-list li {
+    margin-bottom: 5px;
+}
+
+.recipe-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.recipe-list a:hover {
+    color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipes-section {
+        flex-direction: column; /* Stacks the sections vertically */
+    }
+
+    .french-recipes {
+        order: 1; /* Ensures French recipes are displayed first */
+    }
+
+    .english-recipes {
+        order: 2; /* Ensures English recipes are displayed second */
+    }
+
+    .recipe-list {
+        flex: 1 1 100%;
+    }
+}
