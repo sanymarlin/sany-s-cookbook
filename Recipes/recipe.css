@@ -1,43 +1,193 @@
-/* Recipe Page Specific Styles */
-.page-title-section {
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the entire layout horizontally */
     padding: 20px;
+}
+
+/* Main Content Wrapper */
+main {
+    width: 100%; /* Ensure the banner and recipe share the same width */
+    max-width: 820px; /* Match the outer rectangle width */
+    margin: 0 auto;
+}
+
+/* Wrapper for Banner and Recipe */
+.container {
+    width: 100%; /* Allow the container to adapt to screen size */
+    max-width: 820px; /* Matches the recipe width */
+    margin: 0 auto; /* Center the container */
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    border-radius: 8px; /* Apply rounded corners to the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for the entire layout */
+    overflow: hidden; /* Prevent elements from spilling outside */
 }
 
-.page-title-section .french-title {
-    text-align: left;
-    font-size: 1.8rem;
-    color: #4caf50;
+/* Banner Styling */
+.recipe-banner {
+    width: 100%; /* Full width of the container */
+    text-align: center;
 }
 
-.page-title-section .english-title {
-    text-align: right;
-    font-size: 1.8rem;
-    color: #4caf50;
+.recipe-banner img {
+    width: 100%; /* Ensure the banner image stretches to fit the container */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Recipe Content */
+.recipe {
+    padding: 20px; /* Inner padding for the recipe content */
+}
+
+/* Recipe Header */
 .recipe-header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.recipe-image-wrapper {
+.recipe-image {
     flex: 1 1 30%;
     text-align: center;
 }
 
-.recipe-image {
+.recipe-image img {
     width: 100%;
-    max-width: 200px;
-    height: auto;
+    max-width: 250px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-details-wrapper {
+.recipe-meta {
     flex: 1 1 65%;
+}
+
+.recipe-meta p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Ingredients Section */
+.ingredients {
+    margin-top: 20px;
+}
+
+.ingredients h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.ingredients ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingredients ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Instructions Section */
+.instructions {
+    margin-top: 20px;
+}
+
+.instructions h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.instructions ol li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Nutrition Facts Section */
+.nutrition {
+    margin-top: 20px;
+}
+
+.nutrition h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.nutrition th,
+.nutrition td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.nutrition th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.nutrition td {
+    color: #333;
+}
+
+.nutrition td:last-child {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-image {
+        margin-bottom: 20px;
+    }
+
+    .recipe-image img {
+        max-width: 100%;
+    }
+
+    .recipe-meta {
+        text-align: center;
+    }
+
+    .ingredients ul li,
+    .instructions ol li {
+        font-size: 1rem;
+    }
+
+    .nutrition table {
+        font-size: 0.9rem;
+    }
 }
