@@ -116,17 +116,12 @@ main {
     color: #333;
 }
 
-/* Nutrition Facts Section */
+/* Nutrition Section Styling */
 .nutrition {
     margin-top: 20px;
 }
 
-.nutrition h3 {
-    font-size: 1.5rem;
-    color: #4caf50;
-    margin-bottom: 10px;
-}
-
+/* Table Styling */
 .nutrition table {
     width: 100%;
     border-collapse: collapse;
@@ -134,9 +129,10 @@ main {
     text-align: left;
 }
 
+/* Reduce padding to minimize vertical space */
 .nutrition th,
 .nutrition td {
-    padding: 10px;
+    padding: 0px 8px; /* Reduced padding */
     border: 1px solid #ddd;
 }
 
@@ -150,8 +146,13 @@ main {
     color: #333;
 }
 
-.nutrition td:last-child {
-    text-align: right;
+/* Reduce margin to minimize vertical spacing around the table */
+.nutrition h3 {
+    margin-bottom: 10px;
+}
+
+.nutrition table {
+    margin-bottom: 10px; /* Less spacing after the table */
 }
 
 /* Footer */
