@@ -1,227 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recipes</title>
-<style type='text/css'>
-<!--
-body, div, p, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, input, table, img{ padding:0; margin:0;}
-body{ background:#989898; font:normal 12px/16px verdana; color:#666666; padding:20px 0;}
-img{ border:0; vertical-align:middle;}
-ul{ list-style:none;}
-p{ padding-bottom:16px;}
-a:link, a:visited, a:hover { text-decoration:none;}
-a:link, a:visited { color:#009900;}
-a:hover, b, strong {color:#ab0101;}
-h1 {font:normal 25px georgia; color:#ab0101; padding:0 0 10px 0;}
-h2 { font:normal 20px georgia; color:#000;  padding:0 0 20px 0;}
-.menu h1 {text-align:center;}
-.menu h2 {text-align:center;font:italic 16px georgia;}
-.nutfacts { color:#000; font:normal 12px/16px georgia; background:#f7f7f7; padding:10px; border:1px solid #ebebeb;}
-.nutfacts ul { padding:0 0 0 30px;}
-#wrapper{ width:980px; margin:0 auto;}
-.logo{ background:#fff; text-align:center; width:940px; padding:20px; float:left;}
-.message { background:#ffffdd; color:#000000; width:940px; padding:20px 20px 40px 20px; float:left; margin-bottom:10px; }
-.recipe-header, .menu-header, .recipe-box { background:#fff url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAHgAeAwERAAIRAQMRAf/EAGIAAAIDAQAAAAAAAAAAAAAAAAAHAwYICQEBAAAAAAAAAAAAAAAAAAAAABAAAgIBAwIFBQAAAAAAAAAAAgMBBAARQQYTBTFxwRJCsTIjFAcRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmGAYENmyimhtq00UV0DJtac6CIxvOAkLP9H/Y5P2+zoxfYKDDjoj97Pesl9U43092sD64D1wIbNlFNDbVpooroGTa050ERjecDOHM+Zv5G+atWSR2dBfiV4E0o+Z+kbeeBRMDZVmyimhtq00UV0DJtac6CIxvOBnDmfM38jfNWrJI7OgvxK8CaUfM/SNvPAomAYDb/AKPZ5PY0/Z7eyh2BbPanQ1n1D2NvTItNfjE/XAUmAYBgf//Z) no-repeat bottom right; width:940px; padding:20px 20px 40px 20px; float: left; margin-bottom:10px; }
-.recipe-header ul { font-weight:bold; padding:0 0 0 80px;}
-.recipe-header li { list-style: decimal;}
-.recipe-header li li { list-style: circle;}
-.recipe-header li ul { padding:0 0 0 20px;}
-.recipe-header li { padding:6px 0;}
-.menu-header ul { font-weight:bold; margin:0 auto; text-align:center;}
-.menu-header li { list-style: none; font:bold 16px georgia; color:#ab0101;}
-.menu-header li li { list-style: none;  font:bold 12px verdana; color:#000;}
-.menu-header li li li { list-style: none;  font:normal 12px verdana; color:#666;}
-.menu-header li { padding:6px 0;}
-.menu-date, italic, i, em { color:#000;}
-.menu-date {padding-top: 20px;}
-.menu-date {font-style:italic;}
-.chapter { background:#989898; color:#fff; padding:10px 20px; width:940px; float:left;}
-.chapter h1 { color:#fff; page-break-before:always;}
-.recipe-info { page-break-inside:avoid; width:680px; float:left; padding-bottom:10px;}
-.recipe-info table {width:680px; padding:0 0 5px 0;}
-td.recipe-info-prompt {width:170px; color:#ab0101;}
-td.recipe-info-data {width:500; padding-left:10px;}
-.recipe-info dl { width:680px; padding:0 0 5px 0; float:left;}
-.recipe-info dt { width:170px; float:left; color:#ab0101;}
-.recipe-info dd { width:500px; padding-left:10px; float:right;}
-.ingredients { float:left; width:940px; padding:10px 0;}
-.ingredients dl { width:940px; padding:0 0 10px 0; float:left;}
-.ingredients dt { width:180px;  float:left; color:#000; text-align:right;}
-.ingredients dd { width:750px; padding-left:10px; float:right;}
-.ingredients table {width:940px; padding:0 0 10px 0;}
-td.ingr-quant {width:180px; color:#000; text-align:right; padding-right:10px;}
-.nutfacts dl { width:680px; padding:0 0 10px 0; line-height:.6em;}
-.nutfacts dt { width:140px;}
-.nutfacts dd { width:540px; padding-left:10px; float:right;}
-.nutfacts table { padding:0 0 10px 0;}
-.nutfacts tr { line-height:.6em;}
-.nutfacts td { padding-left:10px;}
-td.nutrient-name { width:140px;}
-.recipe-img { page-break-inside:avoid; width:250px; padding-right:10px; float:left;}
-.clear { float:left; width:940px; padding:10px 0;}
-.snc-footer {text-align:right; font-size:small;}
-.rec-title {page-break-before:always;}
--->
-</style>
-<style type='text/css' media='print'>
-<!--
-.ingredients, .recipe-header, .menu-header, .recipe-box, clear {float:none;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chicken and White Beans Skillet with Vegetables">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./recipe.css">
+    <title>Chicken and White beans Skillet with Vegetables - Sany's Cookbook</title>
 </head>
 <body>
-<div id='wrapper'>
+    <!-- Shared Container -->
+    <div class="container">
+        <!-- Banner -->
+        <header class="recipe-banner">
+            <img src="./images/recipe banner.png" alt="Sany's Cookbook Banner">
+        </header>
 
-<!--.............Start Banner...................-->
-<!--.............End Banner...................-->
-<!--.............Start Content...................-->
-<div class='recipes'>
-<div class='recipe-box'>
-<div class='clear'><a name="recipe0"></a><h1 class='rec-title'>Chicken and White Bean Skillet with Vegetables</h1></div>
-<div class='clear'>
-<div class='recipe-img'><a href="Chicken and white beans/img0high.jpg"><img src="Chicken and white beans/img0.jpg" alt="Chicken and White Bean Skillet with Vegetables" /></a></div>
-<div class='recipe-info'>
-<table>
-<tr>
-<td class='recipe-info-prompt'>Category: </td>
-<td class='recipe-info-data'>Main Dish|Plat principal</td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Yield: </td>
-<td class='recipe-info-data'>4  servings </td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Source: </td>
-<td class='recipe-info-data'>Sany</td>
-</tr>
-</table>
-</div>
-</div>
-<div class='clear'>
-<div class='ingredients'>
-<table>
-<tr>
-<td class='ingr-quant'>250g</td>
-<td><span class='ingr-name'>Dry White Beans</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>2</td>
-<td><span class='ingr-name'>Chicken breasts</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>3</td>
-<td><span class='ingr-name'>Carrots</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>8</td>
-<td><span class='ingr-name'>Mushrooms</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>2 tbsp</td>
-<td><span class='ingr-name'>Freash chives</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>3</td>
-<td><span class='ingr-name'>Celery stalks</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>2 tbsp</td>
-<td><span class='ingr-name'>Olive Oil</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'></td>
-<td><span class='ingr-name'>Salt</span><span class='ingr-sep'> - </span><span class='ingr-comment'>To taste</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'></td>
-<td><span class='ingr-name'>Pepper</span><span class='ingr-sep'> - </span><span class='ingr-comment'>To taste</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>1 tsp</td>
-<td><span class='ingr-name'>dried thyme</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>1 tsp</td>
-<td><span class='ingr-name'>rosemary</span></td>
-</tr>
-</table>
-</div>
-<p>Prepare the White Beans:<br />
-Rinse 250g of dry white beans and soak them overnight in plenty of water.<br />
-Drain and rinse the beans, then place them in a pot with fresh water. Bring to a boil, then simmer for about 1–1.5 hours until tender. Drain and set aside.<br />
-<br />
-Prepare the Vegetables:<br />
-Peel and dice the carrots into small pieces.<br />
-Slice the mushrooms thinly.<br />
-Chop the celery into small chunks.<br />
-Finely chop the chives.<br />
-<br />
-Cook the Chicken:<br />
-Cut the 400g of chicken breasts into bite-sized cubes.<br />
-Heat 1 tablespoon of olive oil in a large skillet or pot over medium heat.<br />
-Add the chicken, season with salt and pepper, and cook until browned and fully cooked (about 7-10 minutes). Remove from the skillet and set aside.<br />
-<br />
-Cook the Vegetables:<br />
-In the same skillet, add another tablespoon of olive oil.<br />
-Sauté the carrots and celery for 5 minutes until slightly softened.<br />
-Add the mushrooms and cook for another 5 minutes until tender.<br />
-<br />
-Combine:<br />
-Return the cooked chicken to the skillet with the vegetables.<br />
-Stir in the cooked white beans.<br />
-Add ½ cup (125ml) of water or chicken broth for moisture if needed.<br />
-Season with salt, pepper, and optional thyme or rosemary.<br />
-Simmer for 5 minutes to allow flavors to meld.<br />
-<br />
-Garnish and Serve:<br />
-Sprinkle the chopped chives over the dish before serving.<br />
-</p>
-</div>
-<div class='clear'>
-<div class='nutfacts'>
-<p>Nutritional facts per serving (daily value): </p>
-<table><tr><td class='nutrient-name' align='left'>Calories</td><td class='nutrient-value' align='right'>470.611kcal</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Protein</td><td class='nutrient-value' align='right'>45.968g</td><td class='nutrient-percent' align='right'> (92%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Total Fat</td><td class='nutrient-value' align='right'>11.133g</td><td class='nutrient-percent' align='right'> (17%)</td></tr>
-<tr><td class='nutrient-name' align='left'>&nbsp;&nbsp;&nbsp;Sat.</td><td class='nutrient-value' align='right'>1.875g</td><td class='nutrient-percent' align='right'> (9%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Carb.</td><td class='nutrient-value' align='right'>47.012g</td><td class='nutrient-percent' align='right'> (16%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Fiber</td><td class='nutrient-value' align='right'>14.542g</td><td class='nutrient-percent' align='right'> (58%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sugars</td><td class='nutrient-value' align='right'>8.869g</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Calcium</td><td class='nutrient-value' align='right'>102.815mg</td><td class='nutrient-percent' align='right'> (10%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Iron</td><td class='nutrient-value' align='right'>6.069mg</td><td class='nutrient-percent' align='right'> (34%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Magnesium</td><td class='nutrient-value' align='right'>193.93mg</td><td class='nutrient-percent' align='right'> (48%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Phosphorus</td><td class='nutrient-value' align='right'>590.38mg</td><td class='nutrient-percent' align='right'> (59%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Potassium</td><td class='nutrient-value' align='right'>1926.828mg</td><td class='nutrient-percent' align='right'> (55%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sodium</td><td class='nutrient-value' align='right'>144.685mg</td><td class='nutrient-percent' align='right'> (6%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Zinc</td><td class='nutrient-value' align='right'>3.086mg</td><td class='nutrient-percent' align='right'> (21%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Copper</td><td class='nutrient-value' align='right'>0.654mg</td><td class='nutrient-percent' align='right'> (33%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Manganese</td><td class='nutrient-value' align='right'>1.215mg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Selenium</td><td class='nutrient-value' align='right'>39.133µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. C</td><td class='nutrient-value' align='right'>6.123mg</td><td class='nutrient-percent' align='right'> (10%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B1</td><td class='nutrient-value' align='right'>0.505mg</td><td class='nutrient-percent' align='right'> (34%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B2</td><td class='nutrient-value' align='right'>0.551mg</td><td class='nutrient-percent' align='right'> (32%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B3</td><td class='nutrient-value' align='right'>15.935mg</td><td class='nutrient-percent' align='right'> (80%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B5</td><td class='nutrient-value' align='right'>3.65mg</td><td class='nutrient-percent' align='right'> (37%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B6</td><td class='nutrient-value' align='right'>1.558mg</td><td class='nutrient-percent' align='right'> (78%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Folate</td><td class='nutrient-value' align='right'>294.389µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Fol. acid</td><td class='nutrient-value' align='right'>0µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B12</td><td class='nutrient-value' align='right'>0.3µg</td><td class='nutrient-percent' align='right'> (5%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A</td><td class='nutrient-value' align='right'>7976.694IU</td><td class='nutrient-percent' align='right'> (160%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A (RAE)</td><td class='nutrient-value' align='right'>406.306µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A1</td><td class='nutrient-value' align='right'>9.52µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. E</td><td class='nutrient-value' align='right'>2.637mg</td><td class='nutrient-percent' align='right'> (13%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. K</td><td class='nutrient-value' align='right'>35.665µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. D (IU)</td><td class='nutrient-value' align='right'>3.88IU</td><td class='nutrient-percent' align='right'> (1%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Trans fat</td><td class='nutrient-value' align='right'>0.01g</td><td class='nutrient-percent' align='right'></td></tr>
+        <!-- Recipe Content -->
+        <main>
+            <article class="recipe">
+                <h2>Chicken and White Beans Skillet with Vegetables</h2>
+                <div class="recipe-meta">
+                    <p><strong>Category :</strong> Main Dish | Plat principal</p>
+                    <p><strong>Yield :</strong> 4 servings</p>
+                    <p><strong>Source :</strong> Sany</p>
+                </div>
+                <div class="recipe-image">
+                    <img src="./Chicken and White Beans/img0.jpg" alt="Chicken and White Beans Skillet">
+                </div>
 
-</table></div>
-</div>
-</div>
-</div>
-<div class='footer'></div>
-<div class='snc-footer'><a href="http://www.shopncook.com">Generated with Shop'NCook Menu 4.0</a></div>
-</div>
-<!--.............End Content...................-->
+                <!-- Ingredients -->
+                <section class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>250 g Dry White Beans</li>
+                        <li>2 Chicken breasts</li>
+                        <li>3 Carrots</li>
+                        <li>8 Mushrooms</li>
+                        <li>2 tbsp Fresh chives</li>
+                        <li>3 Celery stalks</li>
+                        <li>2 tbsp Olive Oil</li>
+                        <li>Salt - To taste</li>
+                        <li>Pepper - To taste</li>
+                        <li>1 tsp Dried thyme</li>
+                        <li>1 tsp Rosemary</li>
+                    </ul>
+                </section>
+
+                <!-- Instructions -->
+                <section class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li><strong>Prepare the White Beans:</strong> Rinse 250 g of dry white beans and soak them overnight in plenty of water. Drain and rinse the beans, then place them in a pot with fresh water. Bring to a boil, then simmer for about 1–1.5 hours until tender. Drain and set aside.</li>
+                        <li><strong>Prepare the Vegetables:</strong> Peel and dice the carrots into small pieces. Slice the mushrooms thinly. Chop the celery into small chunks. Finely chop the chives.</li>
+                        <li><strong>Cook the Chicken:</strong> Cut the 400 g of chicken breasts into bite-sized cubes. Heat 1 tablespoon of olive oil in a large skillet or pot over medium heat. Add the chicken, season with salt and pepper, and cook until browned and fully cooked (about 7-10 minutes). Remove from the skillet and set aside.</li>
+                        <li><strong>Cook the Vegetables:</strong> In the same skillet, add another tablespoon of olive oil. Sauté the carrots and celery for 5 minutes until slightly softened. Add the mushrooms and cook for another 5 minutes until tender.</li>
+                        <li><strong>Combine:</strong> Return the cooked chicken to the skillet with the vegetables. Stir in the cooked white beans. Add ½ cup (125 ml) of water or chicken broth for moisture if needed. Season with salt, pepper, and optional thyme or rosemary. Simmer for 5 minutes to allow flavors to meld.</li>
+                        <li><strong>Garnish and Serve:</strong> Sprinkle the chopped chives over the dish before serving.</li>
+                    </ol>
+                </section>
+
+                <!-- Nutrition Facts -->
+                <section class="nutrition">
+                    <h3>Nutritional Facts (per serving)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Value</th>
+                                <th>% Daily Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Calories</td><td>470.611 kcal</td><td>-</td></tr>
+                            <tr><td>Protein</td><td>45.968 g</td><td>92%</td></tr>
+                            <tr><td>Total Fat</td><td>11.133 g</td><td>17%</td></tr>
+                            <tr><td>Sat.</td><td>1.875 g</td><td>9%</td></tr>
+                            <tr><td>Carb.</td><td>47.012 g</td><td>16%</td></tr>
+                            <tr><td>Fiber</td><td>14.542 g</td><td>58%</td></tr>
+                            <tr><td>Sugars</td><td>8.869 g</td><td>-</td></tr>
+                            <tr><td>Calcium</td><td>102.815 mg</td><td>10%</td></tr>
+                            <tr><td>Iron</td><td>6.069 mg</td><td>34%</td></tr>
+                            <tr><td>Magnesium</td><td>193.93 mg</td><td>48%</td></tr>
+                            <tr><td>Phosphorus</td><td>590.38 mg</td><td>59%</td></tr>
+                            <tr><td>Potassium</td><td>1926.828 mg</td><td>55%</td></tr>
+                            <tr><td>Sodium</td><td>144.685 mg</td><td>6%</td></tr>
+                            <tr><td>Zinc</td><td>3.086 mg</td><td>21%</td></tr>
+                            <tr><td>Copper</td><td>0.654 mg</td><td>33%</td></tr>
+                            <tr><td>Manganese</td><td>1.215 mg</td><td>-</td></tr>
+                            <tr><td>Selenium</td><td>39.133 µg</td><td>-</td></tr>
+                            <tr><td>Vit. C</td><td>6.123 mg</td><td>10%</td></tr>
+                            <tr><td>Vit. B1</td><td>0.505 mg</td><td>34%</td></tr>
+                            <tr><td>Vit. B2</td><td>0.551 mg</td><td>32%</td></tr>
+                            <tr><td>Vit. B3</td><td>15.935 mg</td><td>80%</td></tr>
+                            <tr><td>Vit. B5</td><td>3.65 mg</td><td>37%</td></tr>
+                            <tr><td>Vit. B6</td><td>1.558 mg</td><td>78%</td></tr>
+                            <tr><td>Folate</td><td>294.389 µg</td><td>-</td></tr>
+                            <tr><td>Fol. acid</td><td>0 µg</td><td>-</td></tr>
+                            <tr><td>Vit. B12</td><td>0.3 µg</td><td>5%</td></tr>
+                            <tr><td>Vit. A</td><td>7976.694 IU</td><td>160%</td></tr>
+                            <tr><td>Vit. A (RAE)</td><td>406.306 µg</td><td>-</td></tr>
+                            <tr><td>Vit. A1</td><td>9.52 µg</td><td>-</td></tr>
+                            <tr><td>Vit. E</td><td>2.637 mg</td><td>13%</td></tr>
+                            <tr><td>Vit. K</td><td>35.665 µg</td><td>-</td></tr>
+                            <tr><td>Vit. D (IU)</td><td>3.88 IU</td><td>1%</td></tr>
+                            <tr><td>Trans fat</td><td>0.01 g</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>© 2025 Sany's Cookbook</p>
+        </footer>
+    </div>
 </body>
 </html>

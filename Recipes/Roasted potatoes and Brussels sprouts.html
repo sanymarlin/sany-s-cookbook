@@ -1,222 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recipes</title>
-<style type='text/css'>
-<!--
-body, div, p, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, input, table, img{ padding:0; margin:0;}
-body{ background:#989898; font:normal 12px/16px verdana; color:#666666; padding:20px 0;}
-img{ border:0; vertical-align:middle;}
-ul{ list-style:none;}
-p{ padding-bottom:16px;}
-a:link, a:visited, a:hover { text-decoration:none;}
-a:link, a:visited { color:#009900;}
-a:hover, b, strong {color:#ab0101;}
-h1 {font:normal 25px georgia; color:#ab0101; padding:0 0 10px 0;}
-h2 { font:normal 20px georgia; color:#000;  padding:0 0 20px 0;}
-.menu h1 {text-align:center;}
-.menu h2 {text-align:center;font:italic 16px georgia;}
-.nutfacts { color:#000; font:normal 12px/16px georgia; background:#f7f7f7; padding:10px; border:1px solid #ebebeb;}
-.nutfacts ul { padding:0 0 0 30px;}
-#wrapper{ width:980px; margin:0 auto;}
-.logo{ background:#fff; text-align:center; width:940px; padding:20px; float:left;}
-.message { background:#ffffdd; color:#000000; width:940px; padding:20px 20px 40px 20px; float:left; margin-bottom:10px; }
-.recipe-header, .menu-header, .recipe-box { background:#fff url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAHgAeAwERAAIRAQMRAf/EAGIAAAIDAQAAAAAAAAAAAAAAAAAHAwYICQEBAAAAAAAAAAAAAAAAAAAAABAAAgIBAwIFBQAAAAAAAAAAAgMBBAARQQYTBTFxwRJCsTIjFAcRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmGAYENmyimhtq00UV0DJtac6CIxvOAkLP9H/Y5P2+zoxfYKDDjoj97Pesl9U43092sD64D1wIbNlFNDbVpooroGTa050ERjecDOHM+Zv5G+atWSR2dBfiV4E0o+Z+kbeeBRMDZVmyimhtq00UV0DJtac6CIxvOBnDmfM38jfNWrJI7OgvxK8CaUfM/SNvPAomAYDb/AKPZ5PY0/Z7eyh2BbPanQ1n1D2NvTItNfjE/XAUmAYBgf//Z) no-repeat bottom right; width:940px; padding:20px 20px 40px 20px; float: left; margin-bottom:10px; }
-.recipe-header ul { font-weight:bold; padding:0 0 0 80px;}
-.recipe-header li { list-style: decimal;}
-.recipe-header li li { list-style: circle;}
-.recipe-header li ul { padding:0 0 0 20px;}
-.recipe-header li { padding:6px 0;}
-.menu-header ul { font-weight:bold; margin:0 auto; text-align:center;}
-.menu-header li { list-style: none; font:bold 16px georgia; color:#ab0101;}
-.menu-header li li { list-style: none;  font:bold 12px verdana; color:#000;}
-.menu-header li li li { list-style: none;  font:normal 12px verdana; color:#666;}
-.menu-header li { padding:6px 0;}
-.menu-date, italic, i, em { color:#000;}
-.menu-date {padding-top: 20px;}
-.menu-date {font-style:italic;}
-.chapter { background:#989898; color:#fff; padding:10px 20px; width:940px; float:left;}
-.chapter h1 { color:#fff; page-break-before:always;}
-.recipe-info { page-break-inside:avoid; width:680px; float:left; padding-bottom:10px;}
-.recipe-info table {width:680px; padding:0 0 5px 0;}
-td.recipe-info-prompt {width:170px; color:#ab0101;}
-td.recipe-info-data {width:500; padding-left:10px;}
-.recipe-info dl { width:680px; padding:0 0 5px 0; float:left;}
-.recipe-info dt { width:170px; float:left; color:#ab0101;}
-.recipe-info dd { width:500px; padding-left:10px; float:right;}
-.ingredients { float:left; width:940px; padding:10px 0;}
-.ingredients dl { width:940px; padding:0 0 10px 0; float:left;}
-.ingredients dt { width:180px;  float:left; color:#000; text-align:right;}
-.ingredients dd { width:750px; padding-left:10px; float:right;}
-.ingredients table {width:940px; padding:0 0 10px 0;}
-td.ingr-quant {width:180px; color:#000; text-align:right; padding-right:10px;}
-.nutfacts dl { width:680px; padding:0 0 10px 0; line-height:.6em;}
-.nutfacts dt { width:140px;}
-.nutfacts dd { width:540px; padding-left:10px; float:right;}
-.nutfacts table { padding:0 0 10px 0;}
-.nutfacts tr { line-height:.6em;}
-.nutfacts td { padding-left:10px;}
-td.nutrient-name { width:140px;}
-.recipe-img { page-break-inside:avoid; width:250px; padding-right:10px; float:left;}
-.clear { float:left; width:940px; padding:10px 0;}
-.snc-footer {text-align:right; font-size:small;}
-.rec-title {page-break-before:always;}
--->
-</style>
-<style type='text/css' media='print'>
-<!--
-.ingredients, .recipe-header, .menu-header, .recipe-box, clear {float:none;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roasted Potatoes and Brussels Sprouts Recipe">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./recipe.css">
+    <title>Roasted Potatoes and Brussels Sprouts - Sany's Cookbook</title>
 </head>
 <body>
-<div id='wrapper'>
+    <!-- Shared Container -->
+    <div class="container">
+        <!-- Banner -->
+        <header class="recipe-banner">
+            <img src="./images/recipe banner.png" alt="Sany's Cookbook Banner">
+        </header>
 
-<!--.............Start Banner...................-->
-<!--.............End Banner...................-->
-<!--.............Start Content...................-->
-<div class='recipes'>
-<div class='recipe-box'>
-<div class='clear'><a name="recipe0"></a><h1 class='rec-title'>Roasted Potatoes and Brussels Sprouts</h1></div>
-<div class='clear'>
-<div class='recipe-img'><a href="Roasted potatoes and Brussels sprouts/img0high.jpg"><img src="Roasted potatoes and Brussels sprouts/img0.jpg" alt="Roasted Potatoes and Brussels Sprouts" /></a></div>
-<div class='recipe-info'>
-<table>
-<tr>
-<td class='recipe-info-prompt'>Category: </td>
-<td class='recipe-info-data'>Vegetables</td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Yield: </td>
-<td class='recipe-info-data'>4  servings </td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Source: </td>
-<td class='recipe-info-data'>Sany & and her AI Assistant</td>
-</tr>
-</table>
-</div>
-</div>
-<div class='clear'>
-<div class='ingredients'>
-<table>
-<tr>
-<td class='ingr-quant'>1 kg</td>
-<td><span class='ingr-name'>potatoes</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>500 g</td>
-<td><span class='ingr-name'>Brussels sprouts</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>3 tbsp</td>
-<td><span class='ingr-name'>olive oil</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>4 cloves</td>
-<td><span class='ingr-name'>garlic</span><span class='ingr-sep'> - </span><span class='ingr-comment'>minced</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>2-3 sprigs</td>
-<td><span class='ingr-name'>rosemary or thyme</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>1 ½ tsp</td>
-<td><span class='ingr-name'>salt</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>½ tsp</td>
-<td><span class='ingr-name'>black pepper</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>½ tsp</td>
-<td><span class='ingr-name'>paprika</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>10 gr</td>
-<td><span class='ingr-name'>Parmesan cheese</span></td>
-</tr>
-</table>
-</div>
-<p>Instructions:<br />
-<br />
-Preheat the Oven:<br />
-Preheat your oven to 200°C (400°F) and position a rack in the center.<br />
-<br />
-Prepare the Granite Ware Roaster Pan:<br />
-Lightly grease the bottom of the roaster pan with a teaspoon of olive oil to prevent sticking.<br />
-<br />
-Prepare the Vegetables:<br />
-Wash and dry the potatoes and Brussels sprouts thoroughly.<br />
-Cut the potatoes into bite-sized chunks (approximately 2-3 cm pieces).<br />
-Trim the base of the Brussels sprouts and remove any yellow or damaged outer leaves. Slice in half lengthwise.<br />
-<br />
-Season the Vegetables:<br />
-In a large mixing bowl, combine the potatoes and Brussels sprouts.<br />
-Drizzle with the olive oil, and toss to coat evenly.<br />
-Add the garlic, salt, pepper, rosemary or thyme, and paprika (if using). Toss again until evenly coated.<br />
-<br />
-Arrange in the Roaster Pan:<br />
-Spread the seasoned vegetables in an even layer in the roaster pan.<br />
-Avoid overcrowding to ensure even roasting and browning.<br />
-<br />
-Roast:<br />
-Place the roaster pan in the preheated oven.<br />
-Roast for 35-40 minutes, stirring halfway through, until the potatoes are golden and crispy on the edges and the Brussels sprouts are caramelized.<br />
-<br />
-Optional Garnish:<br />
-Remove the pan from the oven and sprinkle with grated Parmesan cheese (if using).<br />
-Return to the oven for an additional 5 minutes to melt the cheese.<br />
-<br />
-Serve:<br />
-Transfer the roasted vegetables to a serving platter or serve directly from the roaster pan. Enjoy while hot!<br />
-</p>
-</div>
-<div class='clear'>
-<div class='nutfacts'>
-<p>Nutritional facts per serving (daily value): </p>
-<table><tr><td class='nutrient-name' align='left'>Calories</td><td class='nutrient-value' align='right'>334.536kcal</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Protein</td><td class='nutrient-value' align='right'>9.624g</td><td class='nutrient-percent' align='right'> (19%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Total Fat</td><td class='nutrient-value' align='right'>11.594g</td><td class='nutrient-percent' align='right'> (18%)</td></tr>
-<tr><td class='nutrient-name' align='left'>&nbsp;&nbsp;&nbsp;Sat.</td><td class='nutrient-value' align='right'>2.011g</td><td class='nutrient-percent' align='right'> (10%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Carb.</td><td class='nutrient-value' align='right'>52.45g</td><td class='nutrient-percent' align='right'> (17%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Fiber</td><td class='nutrient-value' align='right'>11.369g</td><td class='nutrient-percent' align='right'> (45%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sugars</td><td class='nutrient-value' align='right'>5.707g</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Calcium</td><td class='nutrient-value' align='right'>124.123mg</td><td class='nutrient-percent' align='right'> (12%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Iron</td><td class='nutrient-value' align='right'>3.538mg</td><td class='nutrient-percent' align='right'> (20%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Magnesium</td><td class='nutrient-value' align='right'>86.106mg</td><td class='nutrient-percent' align='right'> (22%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Phosphorus</td><td class='nutrient-value' align='right'>265.177mg</td><td class='nutrient-percent' align='right'> (27%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Potassium</td><td class='nutrient-value' align='right'>1537.332mg</td><td class='nutrient-percent' align='right'> (44%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sodium</td><td class='nutrient-value' align='right'>979.121mg</td><td class='nutrient-percent' align='right'> (41%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Zinc</td><td class='nutrient-value' align='right'>1.401mg</td><td class='nutrient-percent' align='right'> (9%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Copper</td><td class='nutrient-value' align='right'>0.383mg</td><td class='nutrient-percent' align='right'> (19%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Manganese</td><td class='nutrient-value' align='right'>0.873mg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Selenium</td><td class='nutrient-value' align='right'>3.814µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. C</td><td class='nutrient-value' align='right'>130.489mg</td><td class='nutrient-percent' align='right'> (217%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B1</td><td class='nutrient-value' align='right'>0.35mg</td><td class='nutrient-percent' align='right'> (23%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B2</td><td class='nutrient-value' align='right'>0.207mg</td><td class='nutrient-percent' align='right'> (12%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B3</td><td class='nutrient-value' align='right'>3.644mg</td><td class='nutrient-percent' align='right'> (18%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B5</td><td class='nutrient-value' align='right'>1.115mg</td><td class='nutrient-percent' align='right'> (11%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B6</td><td class='nutrient-value' align='right'>0.824mg</td><td class='nutrient-percent' align='right'> (41%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Folate</td><td class='nutrient-value' align='right'>124.468µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Fol. acid</td><td class='nutrient-value' align='right'>0µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B12</td><td class='nutrient-value' align='right'>0.03µg</td><td class='nutrient-percent' align='right'> (1%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A</td><td class='nutrient-value' align='right'>1153.625IU</td><td class='nutrient-percent' align='right'> (23%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A (RAE)</td><td class='nutrient-value' align='right'>61.238µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A1</td><td class='nutrient-value' align='right'>5.025µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. E</td><td class='nutrient-value' align='right'>2.672mg</td><td class='nutrient-percent' align='right'> (13%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. K</td><td class='nutrient-value' align='right'>232.14µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. D (IU)</td><td class='nutrient-value' align='right'>0.475IU</td><td class='nutrient-percent' align='right'> (0%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Trans fat</td><td class='nutrient-value' align='right'>0g</td><td class='nutrient-percent' align='right'></td></tr>
+        <!-- Recipe Content -->
+        <main>
+            <article class="recipe">
+                <h2>Roasted Potatoes and Brussels Sprouts</h2>
+                <div class="recipe-meta">
+                    <p><strong>Category :</strong> Vegetables</p>
+                    <p><strong>Yield :</strong> 4 servings</p>
+                    <p><strong>Source :</strong> Sany & her AI Assistant</p>
+                </div>
+                <div class="recipe-image">
+                    <img src="./Roasted Potatoes and Brussels Sprouts/img0.jpg" alt="Roasted Potatoes and Brussels Sprouts">
+                </div>
 
-</table></div>
-</div>
-</div>
-</div>
-<div class='footer'></div>
-<div class='snc-footer'><a href="http://www.shopncook.com">Generated with Shop'NCook Menu 4.0</a></div>
-</div>
-<!--.............End Content...................-->
+                <!-- Ingredients -->
+                <section class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>1 kg potatoes</li>
+                        <li>500 g Brussels sprouts</li>
+                        <li>3 tbsp olive oil</li>
+                        <li>4 cloves garlic - minced</li>
+                        <li>2-3 sprigs rosemary or thyme</li>
+                        <li>1 ½ tsp salt</li>
+                        <li>½ tsp black pepper</li>
+                        <li>½ tsp paprika</li>
+                        <li>10 g Parmesan cheese</li>
+                    </ul>
+                </section>
+
+                <!-- Instructions -->
+                <section class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li><strong>Preheat the Oven:</strong> Preheat your oven to 200°C (400°F) and position a rack in the center.</li>
+                        <li><strong>Prepare the Granite Ware Roaster Pan:</strong> Lightly grease the bottom of the roaster pan with a teaspoon of olive oil to prevent sticking.</li>
+                        <li><strong>Prepare the Vegetables:</strong> Wash and dry the potatoes and Brussels sprouts thoroughly. Cut the potatoes into bite-sized chunks (approximately 2-3 cm pieces). Trim the base of the Brussels sprouts and remove any yellow or damaged outer leaves. Slice in half lengthwise.</li>
+                        <li><strong>Season the Vegetables:</strong> In a large mixing bowl, combine the potatoes and Brussels sprouts. Drizzle with the olive oil, and toss to coat evenly. Add the garlic, salt, pepper, rosemary or thyme, and paprika. Toss again until evenly coated.</li>
+                        <li><strong>Arrange in the Roaster Pan:</strong> Spread the seasoned vegetables in an even layer in the roaster pan. Avoid overcrowding to ensure even roasting and browning.</li>
+                        <li><strong>Roast:</strong> Place the roaster pan in the preheated oven. Roast for 35-40 minutes, stirring halfway through, until the potatoes are golden and crispy on the edges and the Brussels sprouts are caramelized.</li>
+                        <li><strong>Optional Garnish:</strong> Remove the pan from the oven and sprinkle with grated Parmesan cheese. Return to the oven for an additional 5 minutes to melt the cheese.</li>
+                        <li><strong>Serve:</strong> Transfer the roasted vegetables to a serving platter or serve directly from the roaster pan. Enjoy while hot!</li>
+                    </ol>
+                </section>
+
+                <!-- Nutrition Facts -->
+                <section class="nutrition">
+                    <h3>Nutritional Facts (per serving)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Value</th>
+                                <th>% Daily Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Calories</td><td>334.536 kcal</td><td>-</td></tr>
+                            <tr><td>Protein</td><td>9.624 g</td><td>19%</td></tr>
+                            <tr><td>Total Fat</td><td>11.594 g</td><td>18%</td></tr>
+                            <tr><td>Sat.</td><td>2.011 g</td><td>10%</td></tr>
+                            <tr><td>Carb.</td><td>52.45 g</td><td>17%</td></tr>
+                            <tr><td>Fiber</td><td>11.369 g</td><td>45%</td></tr>
+                            <tr><td>Sugars</td><td>5.707 g</td><td>-</td></tr>
+                            <tr><td>Calcium</td><td>124.123 mg</td><td>12%</td></tr>
+                            <tr><td>Iron</td><td>3.538 mg</td><td>20%</td></tr>
+                            <tr><td>Magnesium</td><td>86.106 mg</td><td>22%</td></tr>
+                            <tr><td>Phosphorus</td><td>265.177 mg</td><td>27%</td></tr>
+                            <tr><td>Potassium</td><td>1537.332 mg</td><td>44%</td></tr>
+                            <tr><td>Sodium</td><td>979.121 mg</td><td>41%</td></tr>
+                            <tr><td>Zinc</td><td>1.401 mg</td><td>9%</td></tr>
+                            <tr><td>Copper</td><td>0.383 mg</td><td>19%</td></tr>
+                            <tr><td>Manganese</td><td>0.873 mg</td><td>-</td></tr>
+                            <tr><td>Selenium</td><td>3.814 µg</td><td>-</td></tr>
+                            <tr><td>Vit. C</td><td>130.489 mg</td><td>217%</td></tr>
+                            <tr><td>Vit. B1</td><td>0.35 mg</td><td>23%</td></tr>
+                            <tr><td>Vit. B2</td><td>0.207 mg</td><td>12%</td></tr>
+                            <tr><td>Vit. B3</td><td>3.644 mg</td><td>18%</td></tr>
+                            <tr><td>Vit. B5</td><td>1.115 mg</td><td>11%</td></tr>
+                            <tr><td>Vit. B6</td><td>0.824 mg</td><td>41%</td></tr>
+                            <tr><td>Folate</td><td>124.468 µg</td><td>-</td></tr>
+                            <tr><td>Fol. acid</td><td>0 µg</td><td>-</td></tr>
+                            <tr><td>Vit. B12</td><td>0.03 µg</td><td>1%</td></tr>
+                            <tr><td>Vit. A</td><td>1153.625 IU</td><td>23%</td></tr>
+                            <tr><td>Vit. A (RAE)</td><td>61.238 µg</td><td>-</td></tr>
+                            <tr><td>Vit. A1</td><td>5.025 µg</td><td>-</td></tr>
+                            <tr><td>Vit. E</td><td>2.672 mg</td><td>13%</td></tr>
+                            <tr><td>Vit. K</td><td>232.14 µg</td><td>-</td></tr>
+                            <tr><td>Vit. D (IU)</td><td>0.475 IU</td><td>0%</td></tr>
+                            <tr><td>Trans fat</td><td>0 g</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>© 2025 Sany's Cookbook</p>
+        </footer>
+    </div>
 </body>
 </html>

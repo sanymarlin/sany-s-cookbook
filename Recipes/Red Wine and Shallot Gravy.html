@@ -1,217 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recipes</title>
-<style type='text/css'>
-<!--
-body, div, p, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form, input, table, img{ padding:0; margin:0;}
-body{ background:#989898; font:normal 12px/16px verdana; color:#666666; padding:20px 0;}
-img{ border:0; vertical-align:middle;}
-ul{ list-style:none;}
-p{ padding-bottom:16px;}
-a:link, a:visited, a:hover { text-decoration:none;}
-a:link, a:visited { color:#009900;}
-a:hover, b, strong {color:#ab0101;}
-h1 {font:normal 25px georgia; color:#ab0101; padding:0 0 10px 0;}
-h2 { font:normal 20px georgia; color:#000;  padding:0 0 20px 0;}
-.menu h1 {text-align:center;}
-.menu h2 {text-align:center;font:italic 16px georgia;}
-.nutfacts { color:#000; font:normal 12px/16px georgia; background:#f7f7f7; padding:10px; border:1px solid #ebebeb;}
-.nutfacts ul { padding:0 0 0 30px;}
-#wrapper{ width:980px; margin:0 auto;}
-.logo{ background:#fff; text-align:center; width:940px; padding:20px; float:left;}
-.message { background:#ffffdd; color:#000000; width:940px; padding:20px 20px 40px 20px; float:left; margin-bottom:10px; }
-.recipe-header, .menu-header, .recipe-box { background:#fff url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAHgAeAwERAAIRAQMRAf/EAGIAAAIDAQAAAAAAAAAAAAAAAAAHAwYICQEBAAAAAAAAAAAAAAAAAAAAABAAAgIBAwIFBQAAAAAAAAAAAgMBBAARQQYTBTFxwRJCsTIjFAcRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmGAYENmyimhtq00UV0DJtac6CIxvOAkLP9H/Y5P2+zoxfYKDDjoj97Pesl9U43092sD64D1wIbNlFNDbVpooroGTa050ERjecDOHM+Zv5G+atWSR2dBfiV4E0o+Z+kbeeBRMDZVmyimhtq00UV0DJtac6CIxvOBnDmfM38jfNWrJI7OgvxK8CaUfM/SNvPAomAYDb/AKPZ5PY0/Z7eyh2BbPanQ1n1D2NvTItNfjE/XAUmAYBgf//Z) no-repeat bottom right; width:940px; padding:20px 20px 40px 20px; float: left; margin-bottom:10px; }
-.recipe-header ul { font-weight:bold; padding:0 0 0 80px;}
-.recipe-header li { list-style: decimal;}
-.recipe-header li li { list-style: circle;}
-.recipe-header li ul { padding:0 0 0 20px;}
-.recipe-header li { padding:6px 0;}
-.menu-header ul { font-weight:bold; margin:0 auto; text-align:center;}
-.menu-header li { list-style: none; font:bold 16px georgia; color:#ab0101;}
-.menu-header li li { list-style: none;  font:bold 12px verdana; color:#000;}
-.menu-header li li li { list-style: none;  font:normal 12px verdana; color:#666;}
-.menu-header li { padding:6px 0;}
-.menu-date, italic, i, em { color:#000;}
-.menu-date {padding-top: 20px;}
-.menu-date {font-style:italic;}
-.chapter { background:#989898; color:#fff; padding:10px 20px; width:940px; float:left;}
-.chapter h1 { color:#fff; page-break-before:always;}
-.recipe-info { page-break-inside:avoid; width:680px; float:left; padding-bottom:10px;}
-.recipe-info table {width:680px; padding:0 0 5px 0;}
-td.recipe-info-prompt {width:170px; color:#ab0101;}
-td.recipe-info-data {width:500; padding-left:10px;}
-.recipe-info dl { width:680px; padding:0 0 5px 0; float:left;}
-.recipe-info dt { width:170px; float:left; color:#ab0101;}
-.recipe-info dd { width:500px; padding-left:10px; float:right;}
-.ingredients { float:left; width:940px; padding:10px 0;}
-.ingredients dl { width:940px; padding:0 0 10px 0; float:left;}
-.ingredients dt { width:180px;  float:left; color:#000; text-align:right;}
-.ingredients dd { width:750px; padding-left:10px; float:right;}
-.ingredients table {width:940px; padding:0 0 10px 0;}
-td.ingr-quant {width:180px; color:#000; text-align:right; padding-right:10px;}
-.nutfacts dl { width:680px; padding:0 0 10px 0; line-height:.6em;}
-.nutfacts dt { width:140px;}
-.nutfacts dd { width:540px; padding-left:10px; float:right;}
-.nutfacts table { padding:0 0 10px 0;}
-.nutfacts tr { line-height:.6em;}
-.nutfacts td { padding-left:10px;}
-td.nutrient-name { width:140px;}
-.recipe-img { page-break-inside:avoid; width:250px; padding-right:10px; float:left;}
-.clear { float:left; width:940px; padding:10px 0;}
-.snc-footer {text-align:right; font-size:small;}
-.rec-title {page-break-before:always;}
--->
-</style>
-<style type='text/css' media='print'>
-<!--
-.ingredients, .recipe-header, .menu-header, .recipe-box, clear {float:none;}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Red Wine and Shallot Gravy Recipe">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./recipe.css">
+    <title>Red Wine and Shallot Gravy - Sany's Cookbook</title>
 </head>
 <body>
-<div id='wrapper'>
+    <!-- Shared Container -->
+    <div class="container">
+        <!-- Banner -->
+        <header class="recipe-banner">
+            <img src="./images/recipe banner.png" alt="Sany's Cookbook Banner">
+        </header>
 
-<!--.............Start Banner...................-->
-<!--.............End Banner...................-->
-<!--.............Start Content...................-->
-<div class='recipes'>
-<div class='recipe-box'>
-<div class='clear'><a name="recipe0"></a><h1 class='rec-title'>Red Wine and Shallot Gravy</h1></div>
-<div class='clear'>
-<div class='recipe-img'><a href="Red Wine and Shallot Gravy/img0high.jpg"><img src="Red Wine and Shallot Gravy/img0.jpg" alt="Red Wine and Shallot Gravy" /></a></div>
-<div class='recipe-info'>
-<table>
-<tr>
-<td class='recipe-info-prompt'>Category: </td>
-<td class='recipe-info-data'>Sauces</td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Yield: </td>
-<td class='recipe-info-data'>4  servings </td>
-</tr>
-<tr>
-<td class='recipe-info-prompt'>Source: </td>
-<td class='recipe-info-data'>Sany and her AI Assistant</td>
-</tr>
-</table>
-</div>
-</div>
-<div class='clear'>
-<div class='ingredients'>
-<table>
-<tr>
-<td class='ingr-heading' colspan='2'>This sauce goes well with duck confit and roasted vegetables.<br />
-Ingredients:</td>
-</tr>
-<tr>
-<td class='ingr-quant'>2</td>
-<td><span class='ingr-name'>shallots</span><span class='ingr-sep'> - </span><span class='ingr-comment'>finely chopped</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>1 clove</td>
-<td><span class='ingr-name'>garlic</span><span class='ingr-sep'> - </span><span class='ingr-comment'>minced</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>200 ml</td>
-<td><span class='ingr-name'>red wine</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>300 ml</td>
-<td><span class='ingr-name'>chicken stock</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>30 g</td>
-<td><span class='ingr-name'>butter</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>1 tbsp</td>
-<td><span class='ingr-name'>flour</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'>2 sprigs</td>
-<td><span class='ingr-name'>thyme</span><span class='ingr-sep'> - </span><span class='ingr-comment'>or ½ tsp dried thyme</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'></td>
-<td><span class='ingr-name'>Salt</span><span class='ingr-sep'> - </span><span class='ingr-comment'>to taste</span></td>
-</tr>
-<tr>
-<td class='ingr-quant'></td>
-<td><span class='ingr-name'>Pepper</span><span class='ingr-sep'> - </span><span class='ingr-comment'>to taste</span></td>
-</tr>
-</table>
-</div>
-<p>Prepare the Base:<br />
-Heat 1 tablespoon of the duck fat from the confit in a pan.<br />
-Add the chopped shallots and garlic. Sauté until softened and lightly golden.<br />
-<br />
-Deglaze with Red Wine:<br />
-Pour in the red wine and bring to a simmer.<br />
-Let it reduce by half to concentrate the flavors (about 5 minutes).<br />
-<br />
-Thicken the Sauce:<br />
-Sprinkle in the flour and stir until combined with the shallot mixture.<br />
-Cook for 1-2 minutes to remove the raw flour taste.<br />
-<br />
-Add Stock and Seasonings:<br />
-Gradually add the stock while whisking to avoid lumps.<br />
-Add the thyme, salt, and pepper.<br />
-Simmer for 10-15 minutes until the sauce thickens slightly.<br />
-<br />
-Finish with Butter:<br />
-Remove the thyme sprigs.<br />
-Stir in the butter for a glossy finish.<br />
-<br />
-Strain (Optional):<br />
-For a smoother sauce, strain through a fine mesh sieve.<br />
-</p>
-</div>
-<div class='clear'>
-<div class='nutfacts'>
-<p>Nutritional facts per serving (daily value): </p>
-<table><tr><td class='nutrient-name' align='left'>Calories</td><td class='nutrient-value' align='right'>139.421kcal</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Protein</td><td class='nutrient-value' align='right'>2.545g</td><td class='nutrient-percent' align='right'> (5%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Total Fat</td><td class='nutrient-value' align='right'>7.13g</td><td class='nutrient-percent' align='right'> (11%)</td></tr>
-<tr><td class='nutrient-name' align='left'>&nbsp;&nbsp;&nbsp;Sat.</td><td class='nutrient-value' align='right'>4.141g</td><td class='nutrient-percent' align='right'> (21%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Carb.</td><td class='nutrient-value' align='right'>7.74g</td><td class='nutrient-percent' align='right'> (3%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Fiber</td><td class='nutrient-value' align='right'>0.873g</td><td class='nutrient-percent' align='right'> (3%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sugars</td><td class='nutrient-value' align='right'>1.926g</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Calcium</td><td class='nutrient-value' align='right'>39.893mg</td><td class='nutrient-percent' align='right'> (4%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Iron</td><td class='nutrient-value' align='right'>2.277mg</td><td class='nutrient-percent' align='right'> (13%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Magnesium</td><td class='nutrient-value' align='right'>14.665mg</td><td class='nutrient-percent' align='right'> (4%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Phosphorus</td><td class='nutrient-value' align='right'>43.199mg</td><td class='nutrient-percent' align='right'> (4%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Potassium</td><td class='nutrient-value' align='right'>183.328mg</td><td class='nutrient-percent' align='right'> (5%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Sodium</td><td class='nutrient-value' align='right'>693.029mg</td><td class='nutrient-percent' align='right'> (29%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Zinc</td><td class='nutrient-value' align='right'>0.314mg</td><td class='nutrient-percent' align='right'> (2%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Copper</td><td class='nutrient-value' align='right'>0.072mg</td><td class='nutrient-percent' align='right'> (4%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Manganese</td><td class='nutrient-value' align='right'>0.285mg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Selenium</td><td class='nutrient-value' align='right'>2.743µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. C</td><td class='nutrient-value' align='right'>1.459mg</td><td class='nutrient-percent' align='right'> (2%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B1</td><td class='nutrient-value' align='right'>0.053mg</td><td class='nutrient-percent' align='right'> (4%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B2</td><td class='nutrient-value' align='right'>0.095mg</td><td class='nutrient-percent' align='right'> (6%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B3</td><td class='nutrient-value' align='right'>1.5mg</td><td class='nutrient-percent' align='right'> (7%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B5</td><td class='nutrient-value' align='right'>0.058mg</td><td class='nutrient-percent' align='right'> (1%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B6</td><td class='nutrient-value' align='right'>0.106mg</td><td class='nutrient-percent' align='right'> (5%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Folate</td><td class='nutrient-value' align='right'>13.558µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Fol. acid</td><td class='nutrient-value' align='right'>3.008µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. B12</td><td class='nutrient-value' align='right'>0.013µg</td><td class='nutrient-percent' align='right'> (0%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A</td><td class='nutrient-value' align='right'>245.407IU</td><td class='nutrient-percent' align='right'> (5%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A (RAE)</td><td class='nutrient-value' align='right'>54.77µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. A1</td><td class='nutrient-value' align='right'>51.075µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. E</td><td class='nutrient-value' align='right'>0.311mg</td><td class='nutrient-percent' align='right'> (2%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. K</td><td class='nutrient-value' align='right'>25.017µg</td><td class='nutrient-percent' align='right'></td></tr>
-<tr><td class='nutrient-name' align='left'>Vit. D (IU)</td><td class='nutrient-value' align='right'>4.5IU</td><td class='nutrient-percent' align='right'> (1%)</td></tr>
-<tr><td class='nutrient-name' align='left'>Trans fat</td><td class='nutrient-value' align='right'>0.246g</td><td class='nutrient-percent' align='right'></td></tr>
+        <!-- Recipe Content -->
+        <main>
+            <article class="recipe">
+                <h2>Red Wine and Shallot Gravy</h2>
+                <div class="recipe-meta">
+                    <p><strong>Category :</strong> Sauces</p>
+                    <p><strong>Yield :</strong> 4 servings</p>
+                    <p><strong>Source :</strong> Sany and her AI Assistant</p>
+                </div>
+                <div class="recipe-image">
+                    <img src="./Red Wine and Shallot Gravy/img0.jpg" alt="Red Wine and Shallot Gravy">
+                </div>
 
-</table></div>
-</div>
-</div>
-</div>
-<div class='footer'></div>
-<div class='snc-footer'><a href="http://www.shopncook.com">Generated with Shop'NCook Menu 4.0</a></div>
-</div>
-<!--.............End Content...................-->
+                <!-- Ingredients -->
+                <section class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 shallots - finely chopped</li>
+                        <li>1 clove garlic - minced</li>
+                        <li>200 ml red wine</li>
+                        <li>300 ml chicken stock</li>
+                        <li>30 g butter</li>
+                        <li>1 tbsp flour</li>
+                        <li>2 sprigs thyme - or ½ tsp dried thyme</li>
+                        <li>Salt - to taste</li>
+                        <li>Pepper - to taste</li>
+                    </ul>
+                </section>
+
+                <!-- Instructions -->
+                <section class="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li><strong>Prepare the Base:</strong> Heat 1 tablespoon of the duck fat from the confit in a pan. Add the chopped shallots and garlic. Sauté until softened and lightly golden.</li>
+                        <li><strong>Deglaze with Red Wine:</strong> Pour in the red wine and bring to a simmer. Let it reduce by half to concentrate the flavors (about 5 minutes).</li>
+                        <li><strong>Thicken the Sauce:</strong> Sprinkle in the flour and stir until combined with the shallot mixture. Cook for 1-2 minutes to remove the raw flour taste.</li>
+                        <li><strong>Add Stock and Seasonings:</strong> Gradually add the stock while whisking to avoid lumps. Add the thyme, salt, and pepper. Simmer for 10-15 minutes until the sauce thickens slightly.</li>
+                        <li><strong>Finish with Butter:</strong> Remove the thyme sprigs. Stir in the butter for a glossy finish.</li>
+                        <li><strong>Strain (Optional):</strong> For a smoother sauce, strain through a fine mesh sieve.</li>
+                    </ol>
+                </section>
+
+                <!-- Nutrition Facts -->
+                <section class="nutrition">
+                    <h3>Nutritional Facts (per serving)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Value</th>
+                                <th>% Daily Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Calories</td><td>139.421 kcal</td><td>-</td></tr>
+                            <tr><td>Protein</td><td>2.545 g</td><td>5%</td></tr>
+                            <tr><td>Total Fat</td><td>7.13 g</td><td>11%</td></tr>
+                            <tr><td>Sat.</td><td>4.141 g</td><td>21%</td></tr>
+                            <tr><td>Carb.</td><td>7.74 g</td><td>3%</td></tr>
+                            <tr><td>Fiber</td><td>0.873 g</td><td>3%</td></tr>
+                            <tr><td>Sugars</td><td>1.926 g</td><td>-</td></tr>
+                            <tr><td>Calcium</td><td>39.893 mg</td><td>4%</td></tr>
+                            <tr><td>Iron</td><td>2.277 mg</td><td>13%</td></tr>
+                            <tr><td>Magnesium</td><td>14.665 mg</td><td>4%</td></tr>
+                            <tr><td>Phosphorus</td><td>43.199 mg</td><td>4%</td></tr>
+                            <tr><td>Potassium</td><td>183.328 mg</td><td>5%</td></tr>
+                            <tr><td>Sodium</td><td>693.029 mg</td><td>29%</td></tr>
+                            <tr><td>Zinc</td><td>0.314 mg</td><td>2%</td></tr>
+                            <tr><td>Copper</td><td>0.072 mg</td><td>4%</td></tr>
+                            <tr><td>Manganese</td><td>0.285 mg</td><td>-</td></tr>
+                            <tr><td>Selenium</td><td>2.743 µg</td><td>-</td></tr>
+                            <tr><td>Vit. C</td><td>1.459 mg</td><td>2%</td></tr>
+                            <tr><td>Vit. B1</td><td>0.053 mg</td><td>4%</td></tr>
+                            <tr><td>Vit. B2</td><td>0.095 mg</td><td>6%</td></tr>
+                            <tr><td>Vit. B3</td><td>1.5 mg</td><td>7%</td></tr>
+                            <tr><td>Vit. B5</td><td>0.058 mg</td><td>1%</td></tr>
+                            <tr><td>Vit. B6</td><td>0.106 mg</td><td>5%</td></tr>
+                            <tr><td>Folate</td><td>13.558 µg</td><td>-</td></tr>
+                            <tr><td>Fol. acid</td><td>3.008 µg</td><td>-</td></tr>
+                            <tr><td>Vit. B12</td><td>0.013 µg</td><td>0%</td></tr>
+                            <tr><td>Vit. A</td><td>245.407 IU</td><td>5%</td></tr>
+                            <tr><td>Vit. A (RAE)</td><td>54.77 µg</td><td>-</td></tr>
+                            <tr><td>Vit. A1</td><td>51.075 µg</td><td>-</td></tr>
+                            <tr><td>Vit. E</td><td>0.311 mg</td><td>2%</td></tr>
+                            <tr><td>Vit. K</td><td>25.017 µg</td><td>-</td></tr>
+                            <tr><td>Vit. D (IU)</td><td>4.5 IU</td><td>1%</td></tr>
+                            <tr><td>Trans fat</td><td>0.246 g</td><td>-</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>© 2025 Sany's Cookbook</p>
+        </footer>
+    </div>
 </body>
 </html>
